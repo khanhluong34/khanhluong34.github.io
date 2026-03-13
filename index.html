@@ -7,7 +7,7 @@
   <title>Luong Tran | Homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:wght@600;700&family=Zen+Maru+Gothic:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -20,9 +20,9 @@
       <a href="#cv">CV</a>
     </nav>
     <div class="actions">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <span class="icon sun" aria-hidden="true">☀️</span>
-        <span class="icon moon" aria-hidden="true">🌙</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Change theme" title="Switch theme">
+        <span class="icon" aria-hidden="true">🎨</span>
+        <span id="themeLabel">Default</span>
       </button>
     </div>
   </header>
@@ -30,7 +30,7 @@
   <main class="page">
     <aside class="sidebar">
       <div class="avatar" aria-label="Portrait of Luong Tran">
-        <img src="assets/profile.jpg" alt="Luong Tran portrait" onerror="this.parentElement.classList.add('fallback'); this.remove();" />
+        <img src="assets/avatar.jpeg" alt="Luong Tran portrait" onerror="this.parentElement.classList.add('fallback'); this.remove();" />
         <span class="initials">LT</span>
       </div>
       <div class="card">
@@ -58,7 +58,7 @@
             <a href="https://www.linkedin.com/in/luongtk43" target="_blank" rel="noreferrer">LinkedIn</a>
           </li>
         </ul>
-        <a class="btn" href="assets/resume.pdf" id="cvButton" target="_blank" rel="noreferrer">Download CV</a>
+        <a class="btn" href="assets/luongtk_cv.pdf" id="cvButton" target="_blank" rel="noreferrer">Download CV</a>
       </div>
     </aside>
 
@@ -82,7 +82,7 @@
       </section>
 
       <section id="publications" class="block">
-        <h3>Selected Publications</h3>
+        <h3>Publications</h3>
         <ul class="list">
           <li>
             <div class="paper-title">CLIP-FMoE: Scalable CLIP via Fused Mixture-of-Experts with Enforced Specialization</div>
@@ -132,7 +132,7 @@
           </li>
         </ul>
         <div class="cta">
-          <a class="btn secondary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Open full CV</a>
+          <a class="btn secondary" href="assets/luongtk_cv.pdf" target="_blank" rel="noreferrer">Open full CV</a>
         </div>
       </section>
     </section>
