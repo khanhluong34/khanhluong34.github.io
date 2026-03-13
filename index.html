@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal homepage of Luong Tran" />
+  <title>Luong Tran | Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Luong Tran</div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#research">Research</a>
+      <a href="#cv">CV</a>
+    </nav>
+    <div class="actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="icon sun" aria-hidden="true">☀️</span>
+        <span class="icon moon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <aside class="sidebar">
+      <div class="avatar" aria-label="Portrait of Luong Tran">
+        <img src="assets/profile.jpg" alt="Luong Tran portrait" onerror="this.parentElement.classList.add('fallback'); this.remove();" />
+        <span class="initials">LT</span>
+      </div>
+      <div class="card">
+        <h1>Luong Tran</h1>
+        <p class="role">AI Research Resident @ FPT Software</p>
+        <ul class="meta">
+          <li>
+            <span class="icon" aria-hidden="true">📍</span>
+            <span>Hanoi, Vietnam</span>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">🏢</span>
+            <span>FPT Software</span>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">✉️</span>
+            <a href="mailto:trankhanhluong432@gmail.com">trankhanhluong432@gmail.com</a>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">📞</span>
+            <a href="tel:+84971161526">+84 971-161-526</a>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">🔗</span>
+            <a href="https://www.linkedin.com/in/luongtk43" target="_blank" rel="noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+        <a class="btn" href="assets/resume.pdf" id="cvButton" target="_blank" rel="noreferrer">Download CV</a>
+      </div>
+    </aside>
+
+    <section class="content">
+      <section id="about" class="block">
+        <p class="eyebrow">Hello! I'm Luong</p>
+        <h2>AI researcher exploring multimodal learning and scalable models.</h2>
+        <p>
+          I am an AI Research Resident at the FPT Software AI Center, working on multimodal systems and mixture-of-experts architectures. I earned my Bachelor's in Data Science and Artificial Intelligence (Advanced Program) at the Hanoi University of Science and Technology (HUST), graduating in 2024 with a GPA of 3.75/4.0.
+        </p>
+        <p>
+          I am especially excited about research that bridges robust representation learning with practical deployment: scaling CLIP-style models efficiently, designing aligned vision-language systems, and building trustworthy multimodal agents.
+        </p>
+      </section>
+
+      <section id="research" class="block">
+        <h3>Research Interests</h3>
+        <p>
+          Multi-modal representation learning and its applications in weakly supervised settings; scalable mixture-of-experts architectures for generative and discriminative multimodal models; and vision-based world models combined with reinforcement learning for robotics.
+        </p>
+      </section>
+
+      <section id="publications" class="block">
+        <h3>Selected Publications</h3>
+        <ul class="list">
+          <li>
+            <div class="paper-title">CLIP-FMoE: Scalable CLIP via Fused Mixture-of-Experts with Enforced Specialization</div>
+            <div class="paper-meta">Luong Tran, Lan-Cuong Nguyen, Huynh Dang Nguyen, Dat Nguyen Cong, Dung D. Le, Van Nguyen - International Conference on Learning Representations (ICLR) 2026</div>
+            <a class="inline-link" href="https://openreview.net/forum?id=RErUA45pI9" target="_blank" rel="noreferrer">OpenReview</a>
+          </li>
+          <li>
+            <div class="paper-title">More Reliable Pseudo-labels, Better Performance: A Generalized Approach to Single Positive Multi-label Learning</div>
+            <div class="paper-meta">Luong Tran, Thieu Vo, Anh Nguyen, Sang Dinh Viet, Van Nguyen - IEEE/CVF International Conference on Computer Vision (ICCV) 2025</div>
+            <a class="inline-link" href="https://openaccess.thecvf.com/content/ICCV2025/papers/Tran_More_Reliable_Pseudo-labels_Better_Performance_A_Generalized_Approach_to_Single_ICCV_2025_paper.pdf" target="_blank" rel="noreferrer">Paper</a>
+          </li>
+          <li>
+            <div class="paper-title">Improving Single Positive Multi-label Classification via Knowledge-based Label-weighted Large Loss Rejection</div>
+            <div class="paper-meta">Duc Nguyen Quang*, Luong Tran*, Duc Le Hong, Hoan Nguyen Huy, Sang Dinh Viet - SoICT 2023</div>
+            <a class="inline-link" href="https://dl.acm.org/doi/abs/10.1145/3628797.3629002" target="_blank" rel="noreferrer">Paper</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block">
+        <h3>Preprints</h3>
+        <ul class="list">
+          <li>
+            <div class="paper-title">Precise Video-to-Audio Generation with Cross-Modal Alignment in Latent Space</div>
+            <div class="paper-meta">Thanh V. T. Tran, Ngoc-Son Nguyen, <strong>Luong Tran</strong>, Long-Khanh Pham, Paarth Neekhara, Shehzeen Samarah Hussain, Van Nguyen - Under review at CVPR 2026</div>
+          </li>
+          <li>
+            <div class="paper-title">LIBMoE: A Library for Comprehensive Benchmarking of Mixture of Experts in Large Language Models</div>
+            <div class="paper-meta">Nam V. Nguyen, Thong T. Doan, <strong>Luong Tran</strong>, Van Nguyen, Quang Pham - Under review at TMLR</div>
+            <a class="inline-link" href="https://arxiv.org/abs/2411.00918" target="_blank" rel="noreferrer">arXiv</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block" id="cv">
+        <h3>Awards & Honors</h3>
+        <ul class="list">
+          <li>
+            <div class="paper-title">Best Presentation Award</div>
+            <div class="paper-meta">Hanoi University of Science and Technology - July 2024</div>
+            <p class="note">Recognized for thesis presentation in the 2024.2 Computer Vision Council graduation.</p>
+          </li>
+          <li>
+            <div class="paper-title">Track Winner - Cloud Application for Community</div>
+            <div class="paper-meta">JunctionX Hanoi 2023</div>
+            <p class="note">Co-created EcoFrenzy, a social app encouraging greener daily actions.</p>
+          </li>
+        </ul>
+        <div class="cta">
+          <a class="btn secondary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Open full CV</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
