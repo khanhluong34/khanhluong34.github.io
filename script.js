@@ -1,38 +1,28 @@
 (function() {
   const root = document.documentElement;
   const toggle = document.getElementById('themeToggle');
-  const label = document.getElementById('themeLabel');
   const preferred = localStorage.getItem('theme');
   const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const modes = ['light', 'dark', 'anime'];
 
-  function applyTheme(mode) {
-    if (mode === 'light') {
-      root.removeAttribute('data-theme');
+  function setTheme(mode) {
+    if (mode === 'dark') {
+      root.setAttribute('data-theme', 'dark');
     } else {
-      root.setAttribute('data-theme', mode);
+      root.removeAttribute('data-theme');
     }
     localStorage.setItem('theme', mode);
-    if (label) label.textContent = mode === 'light' ? 'Default' : mode.charAt(0).toUpperCase() + mode.slice(1);
   }
 
-  function initTheme() {
-    if (preferred && modes.includes(preferred)) {
-      applyTheme(preferred);
-    } else if (systemDark) {
-      applyTheme('dark');
-    } else {
-      applyTheme('light');
-    }
+  // initialize
+  if (preferred) {
+    setTheme(preferred);
+  } else if (systemDark) {
+    setTheme('dark');
   }
-
-  initTheme();
 
   toggle?.addEventListener('click', () => {
-    const current = root.getAttribute('data-theme') || 'light';
-    const idx = modes.indexOf(current);
-    const next = modes[(idx + 1) % modes.length];
-    applyTheme(next);
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    setTheme(isDark ? 'light' : 'dark');
   });
 
   // warn if CV missing (only when served over http/https to avoid file:// CORS issues)
